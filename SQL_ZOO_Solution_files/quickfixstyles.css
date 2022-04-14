@@ -1,0 +1,112 @@
+/* THIS IS TEMPORARY. Permanent changes should be made in sphinxcontrib.handouts */
+
+.reveal table td,
+.reveal table th {
+  padding: 0.25em;
+}
+
+.reveal table th p {
+  line-height: 1.2;
+}
+
+#page-toc code {
+  border: 0;
+}
+
+#page-toc code,
+.admonition-title code {
+  color: inherit;
+  background-color: inherit;
+}
+
+#page-toc > ul {
+  position: sticky;
+  top: 0;
+  margin-top: 0.5em 0;
+}
+
+#page-toc > ul > li {
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+kbd,
+.guilabel {
+  background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #b4b4b4;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 20%), 0 2px 0 0 rgb(255 255 255 / 70%) inset;
+  color: #333;
+  display: inline-block;
+  line-height: 1;
+  padding: 2px 4px;
+  white-space: nowrap;
+  font-size: 0.9em;
+}
+
+kbd {
+  font-family: var(--fontMono);
+  font-weight: 600;
+}
+
+.guilabel {
+  background-color: transparent;
+  color: inherit;
+  box-shadow: none;
+}
+
+a code {
+  color: inherit;
+}
+
+dt .pre {
+  font-size: 1.1em;
+  border: inherit;
+  color: inherit;
+  padding: inherit;
+  font-weight: inherit;
+  font-family: var(--fontMono);
+}
+
+a:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+ol ol > li {
+  padding-left: 1em;
+}
+
+.lowerroman {
+  --listCounterStyle: lower-roman;
+}
+
+.admonition {
+  line-height: 1.23;
+}
+
+cite {
+  font-weight: 600;
+}
+
+/* Major browsers have support for ::marker pseudoelement now */
+ol {
+  list-style: var(--listCounterStyle);
+  padding-left: 1.3em;
+}
+
+ol li {
+  padding-left: 0.25em;
+}
+
+ol > li:before {
+  display: none;
+}
+
+ol > li > :not(ul):not(ol) {
+  margin-left: 0 !important;
+}
+
+::marker {
+  font-weight: bold;
+}
